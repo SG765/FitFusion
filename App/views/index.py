@@ -1,7 +1,8 @@
 from flask import Blueprint, redirect, render_template, request, send_from_directory, jsonify, flash, url_for
 from flask_login import login_required, login_user, current_user, logout_user
 import traceback
-from App.models import User
+import csv
+from App.models import User, Exercise
 from App.database import db
 from App.controllers import create_user
 
@@ -21,6 +22,13 @@ def init():
     db.drop_all()
     db.create_all()
     create_user('bob', 'bob@bob.com', 'bobpass')
+
+    with open('exercise.csv', newline='', encoding='utf8') as csvfile:
+      reader = csv.DictReader(csvfile)
+      for row in reader:
+	      exercise = Exercise(id=row['id'],name=row['name'])
+	      db.session.add(exercise)
+    db.session.commit()
     return jsonify(message='db initialized!')
 
 @index_views.route('/health', methods=['GET'])
