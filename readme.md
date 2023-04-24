@@ -1,5 +1,5 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/SG765/FitFusion)
-<a href="https://render.com/deploy?repo=https://github.com/SG765/FitFusion">
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/VyanPersad/FitFusion)
+<a href="https://render.com/deploy?repo=https://github.com/VyanPersad/FitFusion">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 
