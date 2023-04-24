@@ -5,7 +5,6 @@ import csv
 from App.database import db, get_migrate
 from App.models import User, Exercise, UserExercise, UserProgress
 from App.main import create_app
-import os
 from App.controllers import (create_user, get_all_users_json, get_all_users)
 
 db.create_all()
@@ -23,10 +22,7 @@ def initialize():
   db.create_all()
   create_user('bob', 'bob@bob.com', 'bobpass')
 
-	# Get the absolute path of the CSV file
-  exercise_csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'exercise.csv')
-
-  with open(exercise_csv_path, newline='', encoding='utf8') as csvfile:
+  with open('exercise.csv', newline='', encoding='utf8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
       exercise = Exercise(id=row['id'],name=row['name'])
