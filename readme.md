@@ -5,10 +5,15 @@
 
 ![Tests](https://github.com/uwidcit/flaskmvc/actions/workflows/dev.yml/badge.svg)
 
-# Running Project Via Development Environment
-1. ```pip install -r requirements.txt```
-2. ```flask run```
-3. ```flask init```
+# Running Project Via Development Environment (Codespaces, Gitpod, etc)
+1. ```pip install -r requirements.txt``` -cmd to install requirements
+2. ```flask init``` -cmd for initializing database
+3. ```flask run``` -cmd for running the server
+4. Register a new user to test the app or alternatively use the following credentials to login:
+   username: ```bob```
+   password: ```bobpass```
+
+
 
 # Flask MVC Template
 A template for flask applications structured in the Model View Controller pattern [Demo](https://dcit-flaskmvc.herokuapp.com/). [Postman Collection](https://documenter.getpostman.com/view/583570/2s83zcTnEJ)
