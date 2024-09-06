@@ -1,9 +1,14 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/VyanPersad/FitFusion)
-<a href="https://render.com/deploy?repo=https://github.com/VyanPersad/FitFusion">
+<a href="https://render.com/deploy?repo=https://github.com/SG765/FitFusion">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 
 ![Tests](https://github.com/uwidcit/flaskmvc/actions/workflows/dev.yml/badge.svg)
+
+# Running Project Via Development Environment
+1. ```pip install -r requirements.txt```
+2. ```flask run```
+3. ```flask init```
 
 # Flask MVC Template
 A template for flask applications structured in the Model View Controller pattern [Demo](https://dcit-flaskmvc.herokuapp.com/). [Postman Collection](https://documenter.getpostman.com/view/583570/2s83zcTnEJ)
